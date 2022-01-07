@@ -56,7 +56,7 @@ if /I "%player1Input%"=="%player2input%" (
 	goto start
 )
 
-::P1 WIN RESULT::
+::P1 WIN RESULTS::
 
 if /I "%player1Input%"=="P" if /I "%player2Input%"=="R" (
 	cls
@@ -66,8 +66,40 @@ if /I "%player1Input%"=="P" if /I "%player2Input%"=="R" (
 	goto start
 )
 
-::P2 WIN RESULT::
+if /I "%player1Input%"=="R" if /I "%player2Input%"=="S" (
+	cls
+	echo P1: %player1Choice%, P2: %player2Choice%,
+	echo Player 1 Wins!
+	pause
+	goto start
+)
+
+if /I "%player1Input%"=="S" if /I "%player2Input%"=="P" (
+	cls
+	echo P1: %player1Choice%, P2: %player2Choice%,
+	echo Player 1 Wins!
+	pause
+	goto start
+)
+
+::P2 WIN RESULTS::
 if /I "%player1Input%"=="R" if /I "%player2Input%"=="P" (
+	cls
+	echo P1: %player1Choice%, P2: %player2Choice%,
+	echo Player 2 Wins!
+	pause
+	goto start
+)
+
+if /I "%player1Input%"=="S" if /I "%player2Input%"=="R" (
+	cls
+	echo P1: %player1Choice%, P2: %player2Choice%,
+	echo Player 2 Wins!
+	pause
+	goto start
+)
+
+if /I "%player1Input%"=="P" if /I "%player2Input%"=="S" (
 	cls
 	echo P1: %player1Choice%, P2: %player2Choice%,
 	echo Player 2 Wins!
