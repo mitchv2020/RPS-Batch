@@ -1,4 +1,5 @@
 @echo off
+title Rock Paper Scissors
 
 :start
 cls
