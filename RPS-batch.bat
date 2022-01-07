@@ -67,7 +67,7 @@ if /I "%player1Input%"=="P" if /I "%player2Input%"=="R" (
 )
 
 ::P2 WIN RESULT::
-if /I "%player1Input%"=="P" if /I "%player2Input%"=="P" (
+if /I "%player1Input%"=="R" if /I "%player2Input%"=="P" (
 	cls
 	echo P1: %player1Choice%, P2: %player2Choice%,
 	echo Player 2 Wins!
